@@ -13,8 +13,11 @@ import React, { Component } from 'react';
 // App only cares bout render the other components on the page
 
 // We only create containers from components that care about a particular piece of state
+// Container = smart component
 
-export default class BookList extends Component {
+import { connect } from 'react-redux';
+
+class BookList extends Component {
 
   renderList() {
 
@@ -46,3 +49,21 @@ export default class BookList extends Component {
   }
 
 }
+
+// If the state ever changes, this container will instantly rerender with the new list of books
+function mapStateToProps(state) {
+  // 'state' contains the array of books and the active book
+  // Whatever is returned from here will show up as 'props' inside of BookList
+
+  return {
+
+    books: state.books
+
+  };
+
+}
+
+
+// Use the connection function: take the component, take the mapStateToProps function and return a container
+
+export default connect(mapStateToProps)(BookList);
