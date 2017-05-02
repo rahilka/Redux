@@ -16,3 +16,9 @@
 // and then to our app which causes all of our components to rerender
 
 // The new state is injected in all the containers and they rerender
+
+// Action creator:
+
+export function selectBook (book) {
+  console.log('A book has been selected', book.title);
+}
