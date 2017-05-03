@@ -15,10 +15,10 @@
 
 export default function(state = null, action) {
 
-  switch (action, type) {
+  switch (action.type) {
 
-    case: 'BOOK_SELECTED':
-      return: action.payload; /* the action.payload is the selected book */
+    case 'BOOK_SELECTED':
+      return action.payload; /* the action.payload is the selected book */
       // We always want to return a fresh object !!
   }
 
