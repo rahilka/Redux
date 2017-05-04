@@ -37,10 +37,10 @@
 export default function () {
   return [
 
-    { title: 'Javascript The Good Parts' },
-    { title: 'ReactJS' },
-    { title: 'You have got mail'},
-    { title: 'Sleepless in Seatle'}
+    { title: 'Javascript The Good Parts', pages: 101 },
+    { title: 'ReactJS', pages: 93 },
+    { title: 'You have got mail', pages: 85 },
+    { title: 'Sleepless in Seatle', pages: 5 }
 
   ]
 }

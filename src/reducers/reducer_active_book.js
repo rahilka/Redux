@@ -10,8 +10,11 @@
 // We must always return a non undefined value from the reducer, otherwise will throw an error
 
 // es6 syntax: state = null meaning: if this argument is undefined, set it to null
+// This means that when aur app boots up, the state will always be null
+
 
 // Our reducers needs to be connected into the combine reducer statement into ./index.js file
+
 
 export default function(state = null, action) {
 
