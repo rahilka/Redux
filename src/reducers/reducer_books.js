@@ -39,8 +39,8 @@ export default function () {
 
     { title: 'Javascript The Good Parts', pages: 101 },
     { title: 'ReactJS', pages: 93 },
-    { title: 'You have got mail', pages: 85 },
-    { title: 'Sleepless in Seatle', pages: 5 }
+    { title: 'The Da Vinci Code', pages: 850 },
+    { title: 'Harry Potter', pages: 500 }
 
   ]
 }

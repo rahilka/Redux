@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 
 // 'App' component doesn't care about the list of books, only BookList does
 // And BookDetail cares only about the active book
-// App only cares bout render the other components on the page
+// App only cares about render the other components on the page
 
 // We only create containers from components that care about a particular piece of state
 // Container = smart component
@@ -78,7 +78,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   // Whenever selectBook is called, the result should be passed
   // to all of our reducers, and that is powered by this dispatch function
-  return bindActionCreators({ selectBook: selectBook }, dispatch);
+  return bindActionCreators({ selectBook }, dispatch);
 
 }
 
